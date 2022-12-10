@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App{
   background: linear-gradient(180deg, #D8F7FD 18.54%, #FFFFFF 36.77%, #D2F6FE 74.79%, #E6FAFF 100%);
 }

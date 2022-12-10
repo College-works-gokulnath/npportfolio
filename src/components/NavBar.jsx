@@ -10,6 +10,8 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0
 `;
 const Logo = styled.div`
   width: 36px;
@@ -56,6 +58,7 @@ function NavBar() {
         <NavItem><Link style={NavLinkStyle} to='/'>ABOUT</Link></NavItem>
         <NavItem> <Link style={NavLinkStyle} to='contact'>CONTACT</Link></NavItem>
       </NavList>
+
     </Nav>
   );
 }
