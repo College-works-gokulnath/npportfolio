@@ -1,5 +1,5 @@
 import React from "react";
-import { Link,Text} from "react-router-dom";
+import { Link, Text } from "react-router-dom";
 
 import styled from "styled-components";
 
@@ -11,7 +11,8 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0
+  top: 0;
+  z-index: 1000;
 `;
 const Logo = styled.div`
   width: 36px;
@@ -35,7 +36,6 @@ const NavItem = styled.li`
 
   /* test  */
 
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -45,20 +45,43 @@ const NavItem = styled.li`
   cursor: pointer;
 `;
 const NavLinkStyle = {
-  textDecoration:'none',
-  color:'black'
-}
+  textDecoration: "none",
+  color: "black",
+};
 function NavBar() {
   return (
     <Nav>
       <Logo>{/* <img src="Assets/logo.png" /> */}</Logo>
       <NavList>
-        <NavItem> <Link style={NavLinkStyle} to='/publications'>PUBLICATIONS</Link></NavItem>
-        <NavItem><Link style={NavLinkStyle} to='projects'>PROJECTS</Link></NavItem>
-        <NavItem><Link style={NavLinkStyle} to='/'>ABOUT</Link></NavItem>
-        <NavItem> <Link style={NavLinkStyle} to='contact'>CONTACT</Link></NavItem>
+      <NavItem>
+          {" "}
+          <Link style={NavLinkStyle} to="/gs">
+            GOOGLE SCHOLAR
+          </Link>
+        </NavItem>
+        <NavItem>
+          {" "}
+          <Link style={NavLinkStyle} to="/publications">
+            PUBLICATIONS
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link style={NavLinkStyle} to="projects">
+            PROJECTS
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link style={NavLinkStyle} to="/">
+            ABOUT
+          </Link>
+        </NavItem>
+        <NavItem>
+          {" "}
+          <Link style={NavLinkStyle} to="contact">
+            CONTACT
+          </Link>
+        </NavItem>
       </NavList>
-
     </Nav>
   );
 }

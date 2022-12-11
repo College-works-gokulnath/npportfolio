@@ -11,6 +11,7 @@ const MainSection = styled.div`
   justify-content: space-between;
   height: 100%;
   padding: 20px;
+  background: linear-gradient(180deg, #D8F7FD 18.54%, #FFFFFF 36.77%, #D2F6FE 74.79%, #E6FAFF 100%);
 `;
 const LeftSideMain = styled.div`
   height: 100%;
