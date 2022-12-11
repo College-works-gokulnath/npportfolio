@@ -6,24 +6,24 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Tabs from './Tabs'
+import like from '../images/like.svg' 
+import share from '../images/share.svg'
+import send from '../images/send.svg'
+import './main.css'
 const MainSection = styled.div`
   display: flex;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
+  height: 100%; 
+  padding: 1rem 10%;
   background: linear-gradient(180deg, #D8F7FD 18.54%, #FFFFFF 36.77%, #D2F6FE 74.79%, #E6FAFF 100%);
 `;
 const LeftSideMain = styled.div`
   height: 100%;
-  width: 467px;
+  flex: 2;
   background: rgba(255, 255, 255, 0.72);
   box-shadow: 0px 72px 133px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 20px;
-`;
-
-const RightSideMain = styled.div`
-  height: 100%;
 `;
 const ProfileImg = styled.div`
   /* background-image: url('Assets/profileimg.svg'); */
@@ -159,6 +159,39 @@ gap: 10px;
 cursor: pointer;
 align-items: center;
 `;
+
+// Right Main Stylings
+
+const RightSideMain = styled.div`
+  flex: 5;
+  padding: 3rem;
+`;
+const Heading = styled.p`
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.25;
+`
+const Desc = styled.p`
+    font-size: 1.5rem;
+    font-weight: normal;
+`
+const Share = styled.div`
+    background-color: white;
+    border-radius: 100px;
+    height: auto;
+    padding: 0.5rem;
+    gap:0.7rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 79px;
+    top:20%;
+    right:15%;
+`
+
+
+
+
 function Main() {
   return (
     <MainSection>
@@ -248,14 +281,27 @@ function Main() {
             <InstagramIcon />
             <FacebookIcon />
             <GitHubIcon />
-            <LinkedInIcon/>
-            <TwitterIcon/>
+            <LinkedInIcon />
+            <TwitterIcon />
           </Icons>
         </LeftSideSection_4>
       </LeftSideMain>
-
-      <RightSideMain></RightSideMain>
+      <RightSideMain>
+        <Heading>M.E., Ph.D </Heading>
+        <Desc>Professor at Saveetha Engineering College</Desc>
+        <main style={{width:"80%", marginTop: "1rem"}}>
+          <Tabs />
+        </main>
+      </RightSideMain>
+      <Share>
+        <img src={like} alt="image" />        
+        <hr></hr>     
+        <img src={share} alt="image" />        
+        <img src={send} alt="image" />        
+      </Share>
     </MainSection>
+
+
   );
 }
 
