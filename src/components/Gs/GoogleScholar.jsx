@@ -12,7 +12,7 @@ const GsMain = styled.div`
   flex-wrap: wrap;
   /* background-color: black; */
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
 `;
 const Card = styled.div`
   background:${props => props.bg ? `url(${props.bg})` : 'red'} ;

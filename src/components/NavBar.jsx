@@ -13,6 +13,8 @@ const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  
 `;
 const Logo = styled.div`
   width: 36px;
@@ -31,8 +33,9 @@ const NavList = styled.ul`
 `;
 const NavItem = styled.li`
   list-style-type: none;
-
-  color: #131313;
+  /* background-color: red; */
+  color: white;
+  /* color: #ffffff; */
 
   /* test  */
 

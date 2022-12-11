@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import data from '../../GoogleScholar.json'
 import { Input } from '@mui/material'
 import {TextField} from '@mui/material'
-
+import {Button} from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 import { height } from '@mui/system'
 
@@ -31,8 +31,9 @@ gap: 1rem;
 `
 const ArticleCard  = styled.div`
    display: flex;
-   width: auto;
+   width: 100%;
    gap: 1rem;
+
    flex-direction: column;
 
    justify-content: center;
@@ -42,13 +43,23 @@ const ArticleCard  = styled.div`
    /* border: 1px solid gray; */
    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-   background-color: white;
+
+   background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+
+
+
+
+
 ` 
 const Title = styled.div`
   font-weight: 800;
+  font-size: 30px;
 `
 const Author = styled.div`
     font-weight: 500;
+    font-size: 15px;
 `
 const Publication = styled.div`
     
@@ -58,14 +69,16 @@ const View = styled.a`
     color: black;
     font-weight: 800;
     font-family: 'inter';
-    border: 1px solid gray;
+
    display: block;
    margin: auto;
-   padding: 1rem;
+   /* padding: 1rem; */
    border-radius: 20px;
     text-align: left;
 `
 function CoAuthors() {
+
+    
     const [data1,setdata1] = useState(data.co_authors)
     // let data1 = data.articles
     let data2 = data.co_authors
@@ -122,11 +135,15 @@ setdata1(pre=>{
                     <Title><strong>Name :</strong> {data.name}</Title>
                     <Author><strong>Affiliations :</strong> {data.affiliations}</Author>
                     <Publication><strong>email :</strong> {data.email}</Publication>
-                    <View href= {data.link} target='_blank'>View profile</View>
+                    <View href= {data.link} target='_blank'>
+                     <Button sx={{background:'#ff4242'}} variant="contained">View profile</Button>
+                    </View>
+                    
+                    
                 </ArticleCard>
         })}
     </ArticleList>
-    {data1.length==0 && <h1>Article not Found !</h1>}
+    {data1.length==0 && <h1>Author not Found !</h1>}
  </ArticleMAin>
   )
 }
