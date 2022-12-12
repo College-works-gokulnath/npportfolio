@@ -19,10 +19,8 @@ const SciContainer  = styled.div`
    gap: 20px;
   padding: 20px;
   font-family: 'inter';
-
-
-
 `
+
 
 function InterNationalpaper() {
   return (
