@@ -34,6 +34,14 @@
     <title>React App</title>
   </head>
   <body>
+    <script>
+      function cb(response) {
+          // document.getElementById('visits').innerText = response.value;
+          localStorage.setItem('Views',response.value)
+          console.log(response.value)
+      }
+      </script>
+      <script async src="https://api.countapi.xyz/hit/xyz/visits?callback=cb"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

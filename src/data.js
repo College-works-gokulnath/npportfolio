@@ -1,5 +1,6 @@
 
 
+
 export const AchievementsandAwards  =[
     {name : 'Participated in Final Round of  SMART INDIA HACKATHON 2022(SIH 2022) at Dy.Patil College of  Engineering ,, Pune ,Maharashtra'},
     {name : "Got award for “Outstanding Contribution in Reviewing “December 2017 in the Editors of Indian Heart Journal, Elsevier, Amsterdam, The Netherlands. "},
@@ -171,5 +172,161 @@ export const UGC  = [
         name:"G.Nalinipriya,D.Vivek, R.E.T.SunilAthersonDaniel, K.Gopinath.,“A Knowledgeable XMPT protocol based instant Messaging with Innovative Secure Framework.” published in Wulfenia  Journal , Vol. 20, No.5 , pp 51-76, 2013,ISSN: 1561882X ",
         host:"(UGC Care List -Journal No:  33248)"
     }
+
+]
+export const ScopuJournalpapers = [
+    {
+        name:"Sankaradass, V., Nalinipriya, G.,“A Recommendation System for Dynamic Replication and Securing Data Process”, Indian Journal of Science and Technology, 2015, 8(29), 79163,2015."
+    },
+    {
+        name:"NaliniPriya, G., Kannan, A., AnandhaKumar.P.,  “ A Hybrid Classification Model for Multivariate Heart Disease Dataset Using Enhanced Support Vector Machine Technique ” International Journal of Soft Computing, 2012, 7(5), pp. 242–248."
+    },
+]
+
+
+export const  ScopusConferencepapers =[    {
+        name:"“Dynamic Face Mask Detection Using Machine Learning” 1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing, ICSTSN 2022 ,ISBN 978-166542111-9."
+    },
+    {
+        name:"“ Dynamic AI based Email Voice Assistant for Web Services”1st IEEE International Conference on Smart Technologies and Systems for Next Generation Computing, ICSTSN 2022, ISBN 978-166542111-9."
+    },
+    {
+        name:" “Adaptive Intelligence System based on the Internet of Things for Patient Monitoring in Remote Area” 2022 International Conference on Computer Communication and Informatics, ICCCI 2022, ISBN  978-166548035-2."
+    },
+    {
+        name:"“ IoT based Dynamic Vehicle Tracking System” 2021 International Conferenceon Advancements in Electrical, Electronics, Communication, Computing and Automation, ICAECA 2021, ISBN 978-166542829-3."
+    },
+    {
+        name:" “ Early Detection of COVID-19 using CT-scan Lungs Images” 2021 International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation, ICAECA 2021, ISBN 978-166542829-3."
+    },
+    {
+        name:"“ A dynamic object oriented approach for context aware services in distributed pervasive healthcare environment” 2020 7th International Conference on Smart Structures and Systems, ICSSS 2020, ISBN 978-172817223-1."
+    },
+    {
+        name:"“ A dynamic tracking system for smart phones-A secure approach” 6th IEEE International Conference on Smart Structures and Systems, ICSSS 2019, ISBN 978-172810027-2."
+    },
+    {
+        name:"“ BayMax: A Smart Healthcare System Provide Services to Millennials Using Machine Learning Technique” 6th IEEE International Conference on Smart Structures and Systems, ICSSS 2019, ISBN 978-172810027-2."
+    },
+    {
+        name:"“ Agro Bidding-A Smart Dynamic System for Enhancement of Farmer's Lifestyle” 6th IEEE International Conference on Smart Structures and Systems, ICSSS 2019, ISBN 978-172810027-2."
+    },
+    {
+        name:" “ To detect and Recognize Object from Videos for Computer Vision by Parallel Approach using Deep Learning” 6th IEEE International Conference on Smart Structures and Systems, ICSSS 2019, ISBN 978-172810027-2."
+    },
+    {
+        name:" “ To detect and Recognize Object from Videos for Computer Vision by Parallel Approach using Deep Learning” Proceedings on 2018 International Conference on Advances in Computing and Communication Engineering, ICACCE 2018, ISBN 978-153864485-0."
+    },
+    {
+        name:"“ Texture based back propagation neural networks for segmentation of arteriole and venule in fundus images” IEEE International Conference on Power, Control, Signals and Instrumentation Engineering, ICPCSI 2017, ISBN 978-153860813-5."
+    },
+    {
+        name:"“ Automatic segmentation of retinal blood vessels employing textural Fuzzy C-Means clustering” Proceedings of IEEE International Conference on Emerging Technological Trends in Computing, Communications and Electrical Engineering, ICETT 2016, ISBN 978-150903751-3."
+    },
+    {
+        name:"“ Acceleration of bullet physics physical simulation library using GPU and demonstration on a set-Top box platform” 2nd International Conference on Information and Communication Technology for Competitive Strategies, ICTCS 2016, ISBN 978-145033962-9 ."
+    },
+    {
+        name:"“ A survey on vulnerable attacks in online social networks” IEEE International Conference on Innovation, Information in Computing Technologies, ICIICT 2015, ISBN978-147998788-7."
+    },
+    {
+        name:'“ Extensive medical data storage with prominent symmetric algorithms on cloud - A protected framework” IEEE International Conference on "Smart Structures and Systems", ICSSS 2013, ISBN 978-146736240-5.'
+    },
+    {
+        name:'“ An empirical study on Multivariate Data in medical decision-making environment” IEEE International Conference on "Smart Structures and Systems", ICSSS 2013, ISBN 978-146736240-5.'
+    },
+   
+
+]
+
+export const  ScopusBookchapters = [
+    {
+        name :'“ An Innovative Rapid Cursor Control System Using Eye Movement for a Physically Challenged Person” Studies in Computational Intelligence, 2022, 1027, pp. 241–247 , Part of the Studies in Computational Intelligence book series (SCI,volume 1027).',
+        BookName :'Modern Approaches in Machine Learning & Cognitive Science: A Walkthrough  ',
+        ISSN:'1860-949X' ,
+        NameoftheConference:'ICCCMLA.,',
+        MonthYear:"August 21-22, 2021",
+        NameofthePublisher:'Springer',
+        ISBNNo:'978-3-030-96634-8',
+    }
+]
+
+export const InternationalResearch = [
+    {
+        name:'D.Gomathi, Dr. M. Ramalingam, Dr.G. Nalinipriya, N. Kanagavalli, D. Saranya., “ Face Emotion Identification System for Visually Challenged Persons using Machine Learning ” Publication in International Journal of Advanced Trends in Computer Science and Engineering, ISSN 2278-3091 (print) Volume 9, Number 4 pp, 8309 -8314, 2020.'
+
+    },
+    {
+        name:'D. Saranya, Dr.G.Nalinipriya , N.Kanagavalli , S.Arunkumar, G.Kavitha., “ Deep CNN models for Driver Activity Recognition for Intelligent Vehicles” Publication in International Journal of Emerging Trends in Engineering Research, ISSN 2347-3983 (print) Volume 9, Number 4 pp, 7146 -7150, 2020.'
+
+    },
+    {
+        name:'M P Rajakumar, Dr.V.Lokeswara Reddy, Dr.G. Nalinipriya, Dr.S.Thanigaivel , M R Arun, “ Detecting Bio-Metric Finger Patterns Using Lsb Substitution Machine Learning Method ” Publication in European Journal of Molecular & Clinical Medicine, ISSN  2515-8260 Volume 07, Issue 07,  pp, 179-186, 2020.'
+
+    },
+    {
+        name:'Dr.Vikas Jain, Dr.S.Kirubakaran, Dr.G.Nalinipriya, Binny.S, Dr.M.Maragatharajan    “ Brain Computer Interface System Using Deep Convolutional Machine Learning Method” Publication in European Journal of Molecular & Clinical Medicine, ISSN  2515-8260 ISSN 2515-8260 Volume 07, Issue 02, pp, 3294-3301, 2020.'
+
+    },
+    {
+        name:'G. Nalinipriya , RamaniKannan , K.G.Maheswari., “ Energy Efficient Trust Analysis System for Dynamic Cloud Environment  ”  Publication  in  TEST Engineering & Management Journal ISSN :0193-4120(print) Volume82, Number 3, pp, 2984-2990,2020. '
+
+    },
+    {
+        name:'G.Nalinipriya , B.Balamurugan ,S.Karthikeyan., “ Using Social Media  for Predictive Data Analytics in Productivity Increasing Decision-Making Process”   Publication  in  TEST Engineering & Management Journal ISSN :0193-4120(print)   Volume82, Number 3, pp, 3050-3057 , 2020. '
+
+    },
+    {
+        name:'Veeramalai Sankaradass and G. Nalinipriya., “A Recommendation System for Dynamic Replication and Securing Data Process” published in Indian Journal of Science and Technology, Vol 8(29), 79163-79168, 2015.'
+
+    },
+    {
+        name:'G.Nalinipriya , G. Manish, N. Pavan Kumarrun., “ A Innovative Mobile Application to File Social Grivances using Geo Information ” Publication  in  International Journal of Advanced Research in Computer and Communication Engineering  ISSN : (Online) 2278-1021 ISSN (Print) 2319-5940  Volume 6 , Issue 4, , pp  46-49 , 2017.'
+
+    },
+    {
+        name:'G. Nalinipriya, P.J.Varalakshmi ., “ Virtual Machine Security Scheme Against Co-Resident Attack In Cloud Computing” published in  Elysium  Journal of Engineering  Research and Management , ISSN 2347-4408  , Volume 2, Issue 5 , pp 1-6 , 2015.'
+
+    },
+    {
+        name:'G.Nalinipriya , J.Nithya , S.Avudaiselvi., “ Efficient Algorithms for Detecting Clone Nodes In Wireless Sensor Networks ” published in  International Journal of Research in Information Technology, ISSN 2001-5569,Vol.3, No. 3, Pg. 239-246  , 2015.'
+
+    },
+    {
+        name:'G.Nalinipriya , P.J.Varalakshmi , I.Jaswethareddy. , “ Recognizing Human Activity Monitoring System using Android Smart phone” published in  International Journal of Research in Information Technology, ISSN 2001-5569 ,Vol.3, No.3, Pg. 247-254   , 2015.'
+
+    },
+    {
+        name:'G.Nalinipriya , S.Veeramani , P.Karthikeyan , .R.Vijayakumar., “  A dynamic recommendation system for online services using Big data ” published in IJRIT International Journal of Research in Information Technology, ISSN 2001-5569 ,Vol.3, No.4, Pg. 30-37, 2015.'
+
+    },
+    {
+        name:'G.Nalinipriya , R.Aswinkumar , “ Secure Massive Data Storage with consistency and route control on the cloud ” published in IOSR journal of  Computer Engineering , Vol. 9, No.1,pp 18-25, 2013.'
+
+    },
+    {
+        name:'BalamuruganBalusamy, Dr.P.Venkatakrishna, G.Nalinipriya., “ A Secure Mobile Patient Criticality Analyzer for Judging Illness using Smart Device ” published in CIIT International Journal on  Automation and Autonomous System Vol 4, No 7, pp267-272,  0974 – 9659 ,2012.'
+
+    },
+    {
+        name:'G.Nalinipriya, A.Kannan, P.Ananahakumar., “ Dynamic Context Adaptation for Diagnosing the Heart Disease in Healthcare Environment Using Optimized Rough Set Approach ”  published in  International Journal on Soft computing (IJSC), Vol.3, No.2, pp. 23-33, 2012.'
+
+    },
+    {
+        name:'G.Nalinipriya, A.Kannan, P.Anandhakumar., “ An Assessment on Neuro-Stastistical Classification Algorithms for the Diagnosis of Multivariate Heart Disease Dataset ” published in International Journal of Recent Trends in Engineering  and Technology , ISSN 2455-1457 ,Vol 7,No .1,pp  32-37, 2012. '
+
+    },
+    {
+        name:'G.Nalinipriya, A.Kannan, P.Anandhakumar, “ Performance Analysis of classifiers for Multivariate Coronary artery disease dataset using   renowned   Metrics ” published in European Journal of Scientific Research, Vol 36,No 4, pp 565-572, 2012. '
+
+    },
+    {
+        name:'G.Nalinipriya, A.Kannan, P.Anandhakumar.,  “A Hybrid classification model for multivariate heart disease dataset using enhanced SVM Techniques” published in  International Journal of Soft computing Vol.7, No. 3, pp 242-248, 2012.“'
+
+    },
+   
+
+
+
 
 ]

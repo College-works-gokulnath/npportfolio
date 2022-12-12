@@ -10,6 +10,8 @@ import Box from '@mui/material/Box';
 import Scijournala from './Scijournala';
 import Ugcjournaal from './Ugcjournaal';
 import {SCI,UGC}from '../../data'
+import Scops from './Scops';
+import InterNationalpaper from './InterNationalpaper';
 function TabPanel(props) {
 
   const { children, value, index, ...other } = props;
@@ -89,10 +91,10 @@ export default function FullWidthTabs() {
 <Ugcjournaal/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Scops/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-        <Scijournala/>
+        <InterNationalpaper/>
         </TabPanel>
       </SwipeableViews>
     </Box>

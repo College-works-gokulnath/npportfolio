@@ -11,18 +11,13 @@ import countapi from 'countapi-js';
 import { useEffect, useLayoutEffect, useState } from "react";
 
 function App() {
-  const [views, setViews] = useState(localStorage.getItem("value"));
+  const [views, setViews] = useState(localStorage.getItem('Views'));
   useEffect(() => {
     console.log(views)
-    setViews(views);
+    setViews(localStorage.getItem('Views'));
   }, []);
   
-  // useLayoutEffect(()=>{
-  //   countapi.visits('stalwart-figolla-f5cfc6.netlify.app').then((result) => {
-  //     console.log(result.value);
-  //     setviews(result.value)
-  //   });
-  // },[])
+
 
 
   return (

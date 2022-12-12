@@ -60,6 +60,11 @@ function NavBar() {
     <Nav>
       <Logo>{/* <img src="Assets/logo.png" /> */}</Logo>
       <NavList>
+         <NavItem>
+          <Link style={NavLinkStyle} to="/">
+            HOME
+          </Link>
+        </NavItem>
       <NavItem>
           {" "}
           <Link style={NavLinkStyle} to="/gs">
@@ -77,11 +82,7 @@ function NavBar() {
             PROJECTS
           </Link>
         </NavItem>
-        <NavItem>
-          <Link style={NavLinkStyle} to="/">
-            ABOUT
-          </Link>
-        </NavItem>
+       
         <NavItem>
           {" "}
           <Link style={NavLinkStyle} to="contact">
