@@ -4,5 +4,7 @@
   box-sizing: border-box;
 }
 .App{
- 
+  /* background-color: black; */
+  background-color:  #7a97ff;;
+  /* background: linear-gradient(180deg, #D8F7FD 18.54%, #FFFFFF 36.77%, #D2F6FE 74.79%, #E6FAFF 100%); */
 }

@@ -6,7 +6,9 @@ import styled from "styled-components";
 const Nav = styled.div`
   width: 100%;
   height: 81px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* background-color: transparent; */
+  background-color: #426bff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +42,7 @@ const NavItem = styled.li`
   /* test  */
 
   font-family: "Inter";
+      /* font-family: 'poppins'; */
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
