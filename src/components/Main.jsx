@@ -9,6 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import Tabs from './Tabs'
 import like from '../images/like.svg' 
 import share from '../images/share.svg'
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import send from '../images/send.svg'
 import './main.css'
 const MainSection = styled.div`
@@ -22,9 +23,11 @@ const LeftSideMain = styled.div`
   flex: 2;
   /* background: rgba(255, 255, 255, 0.72); */
   /* background-color: white; */
-  background-color: #6082ff;
+  /* background-color: #6082ff; */
   /* box-shadow: 0px 72px 133px rgba(0, 0, 0, 0.25);
    */
+  background: rgba(255, 255, 255, 0.72);
+
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; */
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 20px;
@@ -213,7 +216,8 @@ const Share = styled.div`
 const All = styled.div`
   padding: 1rem 10%;
   height: 100%;
-  background: linear-gradient(180deg, #426bff 18.54%, #5a78ff 36.77%, #5c63ef 74.79%, #1a60f6 100%);
+  background: linear-gradient(180deg, #D8F7FD 18.54%, #FFFFFF 36.77%, #D2F6FE 74.79%, #E6FAFF 100%);
+  /* background: linear-gradient(180deg, #426bff 18.54%, #5a78ff 36.77%, #5c63ef 74.79%, #1a60f6 100%); */
 `
 const Aboutme = styled.div`
 z-index: 10000;
@@ -246,7 +250,7 @@ const AboutTitle = styled.div`
   font-size: 180px;
   letter-spacing: 10px;
   text-align: center;
-  text-shadow: ${props=> "-6px -6px "+props.sec+", -5px -5px "+props.sec+",-4px -4px "+props.sec+", -3px -3px "+props.sec+", -2px -2px "+props.sec+",-1px -1px "+props.sec+", 1px 1px "+props.sec+", 2px 2px "+props.sec+",3px 3px "+props.sec+", 4px 4px "+props.sec+", 5px 5px "+props.sec+",6px 6px "+props.sec+", 7px 7px "+props.sec+", 8px 8px "+props.sec+",9px 9px "+props.sec+", 10px 10px "+props.sec+", 11px 11px "+props.sec+",12px 12px "+props.sec+", 13px 13px "+props.sec+", 14px 14px "+props.sec+",15px 15px "+props.sec+", 16px 16px "+props.sec+", 17px 17px "+props.sec+",18px 18px "+props.sec+", 19px 19px "+props.sec+", 20px 20px "+props.sec+",21px 21px "+props.sec+", 22px 22px "+props.sec+", 23px 23px "+props.sec+",24px 24px "+props.sec+", 25px 25px "+props.sec+", 26px 26px "+props.sec+",27px 27px "+props.sec+", 25px 25px "+props.sec+", 28px 28px "+props.sec+",29px 29px "+props.sec+", 30px 30px "+props.sec+", 31px 31px "+props.sec+",32px 32px "+props.sec+", 33px 33px "+props.sec+", 34px 34px "+props.sec+",35px 35px "+props.sec+", 36px 36px "+props.sec+", 37px 37px "+props.sec+",38px 38px "+props.sec+", 39px 39px "+props.sec+", 40px 40px;"};
+  /* text-shadow: ${props=> "-6px -6px "+props.sec+", -5px -5px "+props.sec+",-4px -4px "+props.sec+", -3px -3px "+props.sec+", -2px -2px "+props.sec+",-1px -1px "+props.sec+", 1px 1px "+props.sec+", 2px 2px "+props.sec+",3px 3px "+props.sec+", 4px 4px "+props.sec+", 5px 5px "+props.sec+",6px 6px "+props.sec+", 7px 7px "+props.sec+", 8px 8px "+props.sec+",9px 9px "+props.sec+", 10px 10px "+props.sec+", 11px 11px "+props.sec+",12px 12px "+props.sec+", 13px 13px "+props.sec+", 14px 14px "+props.sec+",15px 15px "+props.sec+", 16px 16px "+props.sec+", 17px 17px "+props.sec+",18px 18px "+props.sec+", 19px 19px "+props.sec+", 20px 20px "+props.sec+",21px 21px "+props.sec+", 22px 22px "+props.sec+", 23px 23px "+props.sec+",24px 24px "+props.sec+", 25px 25px "+props.sec+", 26px 26px "+props.sec+",27px 27px "+props.sec+", 25px 25px "+props.sec+", 28px 28px "+props.sec+",29px 29px "+props.sec+", 30px 30px "+props.sec+", 31px 31px "+props.sec+",32px 32px "+props.sec+", 33px 33px "+props.sec+", 34px 34px "+props.sec+",35px 35px "+props.sec+", 36px 36px "+props.sec+", 37px 37px "+props.sec+",38px 38px "+props.sec+", 39px 39px "+props.sec+", 40px 40px;"}; */
   width: 100%;
 
 `
@@ -265,7 +269,7 @@ letter-spacing: 1px;
 box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 `
 
-function Main() {
+function Main({views}) {
   return (
     <All>
     <MainSection>
@@ -371,7 +375,13 @@ function Main() {
         </main>
       </RightSideMain>
       <Share>
-        <img  src={like} alt="image" />        
+
+          <div>
+<VisibilityIcon/>
+            <div>
+            {views}     
+            </div>
+            </div>
          <hr/>     
         <img  src={share} alt="image" />        
         <img  src={send} alt="image" />        

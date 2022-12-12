@@ -9,7 +9,7 @@ import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 import {makeStyles} from '@mui/material/styles';
 import {styled as st }from '@mui/material/styles';
-import {AchievementsandAwards} from '../data'
+import {AchievementsandAwards,ProfessionalCertifications} from '../data'
 
 const color = red[500];
 
@@ -87,7 +87,7 @@ const styles = {
                     <TabList  textColor='inherit'
        TabIndicatorProps={{style:{background:'#a5d5ff',fontWeight:'bold'}}} onChange={handleChange} aria-label="lab API tabs example">
                         <Tab  sx={{color:"black"}} label="Achievements and Awards " value="1" />
-                        <Tab sx={{color:"black"}} label="Works" value="2" />
+                        <Tab sx={{color:"black"}} label="Professional Certifications " value="2" />
                     </TabList>
                 </Box>
                 <TabPanel sx={{
@@ -113,7 +113,30 @@ return         <Card>
                     </CardContainer>
 
                 </TabPanel>
-                <TabPanel value="2">Works</TabPanel>
+                <TabPanel value="2" sx={{
+                    padding:'20px',
+
+                    height:'57vh',
+                    overflow:'scroll',
+                    borderRadius:'0  0 20px 20px',
+                    boxShadow:'rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;'
+                }}>
+
+                <CardContainer>
+                        {
+                            ProfessionalCertifications.map(data=>{
+return         <Card>
+<Title>
+    <img style={{ width: "32px", height: "32px", borderRadius: "50px" }} src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-realistic-trophy-gold-cup-png-image_3696414.jpg" alt="image" />
+    <h3>{data.name}</h3>
+</Title>
+</Card>
+                            })
+                        }
+
+                    </CardContainer>
+
+                </TabPanel>
             </TabContext>
         </Box>
     );

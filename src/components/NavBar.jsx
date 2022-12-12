@@ -6,9 +6,10 @@ import styled from "styled-components";
 const Nav = styled.div`
   width: 100%;
   height: 81px;
-  /* background-color: #ffffff; */
+ background: rgba(255, 255, 255, 0.86);
+;
   /* background-color: transparent; */
-  background-color: #426bff;
+  /* background-color: #426bff; */
   display: flex;
   justify-content: space-between;
   align-items: center;
